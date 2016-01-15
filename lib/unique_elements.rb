@@ -15,6 +15,7 @@ def count_elements(arr)
   
 def find_unique_elements(arr)
     a = count_elements(arr)
-    b = a.hash.index(1)
+    #next line should create an array that stores the hash keys with a value of '1' from the hash created by the 'count_elements' method
+    b = [a.hash.index(1)]
     returns b
 end
