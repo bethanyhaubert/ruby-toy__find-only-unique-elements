@@ -11,12 +11,16 @@ def count_elements(arr)
       h[n]= h[n] +1
     end
   end
-  returns h
+  return h
 end  
   
 def find_unique_elements(arr)
-    a = count_elements(arr)
+    store_unique = []
+    h = count_elements(arr)
     #next line should create an array that stores the hash keys with a value of '1' from the hash created by the 'count_elements' method
-    b = [a.hash.index(1)]
-    returns b
+    h.each do |k,v|
+    if h.index(1) == true
+       store_unique >> "#{k}"
+    end
+    return  store_unique
 end
