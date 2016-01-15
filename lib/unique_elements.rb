@@ -11,7 +11,8 @@ def count_elements(arr)
       h[n]= h[n] +1
     end
   end
-  
+  returns h
+end  
   
 def find_unique_elements(arr)
     a = count_elements(arr)
