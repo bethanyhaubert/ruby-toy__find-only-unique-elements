@@ -18,10 +18,9 @@ def find_unique_elements(arr)
     store_unique = []
     h = count_elements(arr)
     #next lines should loop through hash and store the hash keys with a value of '1' from the hash created by the 'count_elements' method
-    h.loop do |key, value|
-        #h.has_value(1) == true
-        if h.key?(1)   == true
-            store_unique << '#{key}'
+    h.each do |key, value|
+        if value == 1
+            store_unique << key
         end
     end
     return store_unique
